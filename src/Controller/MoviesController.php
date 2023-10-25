@@ -8,11 +8,12 @@ use Symfony\Component\Routing\Annotation\Route;
 
 class MoviesController extends AbstractController
 {
-    #[Route('/movies', name: 'app_movies')]
+    #[Route('/movies/', name: 'movies')]
     public function index(): Response
     {
-        return $this->render('movies/index.html.twig', [
-            'controller_name' => 'MoviesController',
+        return $this->render("index.html.twig", [
+           "title" => ""
         ]);
     }
-}
+    
+};
