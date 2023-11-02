@@ -8,11 +8,14 @@ use Symfony\Component\Routing\Annotation\Route;
 
 class MoviesController extends AbstractController
 {
-    #[Route('/movies', name: 'app_movies')]
+    #[Route('/movies/', name: 'movies')]
     public function index(): Response
     {
-        return $this->render('movies/index.html.twig', [
-            'controller_name' => 'MoviesController',
-        ]);
+
+        $movies = ["Avengers: Endgame", "Inception", "Loki", "Black Widow"];
+        return $this->render("index.html.twig", array(
+            "movies" => $movies
+        ));
     }
-}
+    
+};
