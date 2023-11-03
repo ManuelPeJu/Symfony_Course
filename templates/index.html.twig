@@ -6,6 +6,8 @@
 
 {% block body %}
 
-    {{ author }}
+    {% for movie in movies %}
+        {{movie}} <br>
+    {% endfor %}
 
 {% endblock %}
