@@ -55,7 +55,7 @@ class MoviesController extends AbstractController
         // $movies = $repository->findBy([], ["id" => "DESC"]);
         // $movies = $repository->getClassName();
 
-        // dd($movies);
+        dd($movies);
 
         return $this->render("index.html.twig");
     } //method with constructor
