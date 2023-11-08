@@ -3,7 +3,7 @@
 namespace App\Controller;
 
 use App\Entity\Movie;
-use App\Repository\MovieRepository;
+// use App\Repository\MovieRepository;
 use Doctrine\ORM\EntityManagerInterface;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Response;
@@ -55,7 +55,7 @@ class MoviesController extends AbstractController
         // $movies = $repository->findBy([], ["id" => "DESC"]);
         // $movies = $repository->getClassName();
 
-        dd($movies);
+        // dd($movies);
 
         return $this->render("index.html.twig");
     } //method with constructor

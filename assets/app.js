@@ -8,5 +8,5 @@
 // any CSS you import will output into a single css file (app.css in this case)
 import './styles/app.css';
 
-//Compile new JS file
-import "./javascript/method1";
+//Compile new JavaScript file
+import './javascript/method1.js';
